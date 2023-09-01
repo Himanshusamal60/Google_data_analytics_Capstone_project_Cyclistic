@@ -2,7 +2,9 @@
 title: "Cyclistic Case Study"
 author: "himanshu samal"
 date: "2023-08-31"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 #Introduction  
 In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. In order to answer the key business questions, I will follow the steps of the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.
@@ -125,11 +127,17 @@ Casual riders have frequently started their trips from the stations in vicinity 
   Similar trend can be observed in ending station locations. Casual riders end their journay near parks, museums and other recreational sites whereas members end their trips close to universities, residential and commmercial areas. So this proves that casual riders use bikes for leisure activities while members extensively rely on them for daily commute.  
   
     
-**Summary**:  
-```{r}
-read.csv("summary.csv", header=TRUE)
-```
+**Summary**:
 
+***Casual***  
+1.Prefer using bikes throughout the day, more frequently over the weekends in summer and spring for leisure activities.  
+2.Travel 2 times longer but less frequently than members.  
+3.Start and end their journeys near parks, museums, along the coast and other recreational sites.  
+
+
+***Member***  
+1.Prefer riding bikes on week days during commute hours (8 am / 5pm) in summer and spring.  2.Travel more frequently but shorter rides (approximately half of casual riders' trip duration).  
+3.Start and end their trips close to universities, residential and commercial areas.  
 
 
   
